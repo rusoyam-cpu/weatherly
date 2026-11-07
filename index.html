@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="style.css">
+<div class="bg-glow">
+    <div class="glow-circle circle-1"></div>
+    <div class="glow-circle circle-2"></div>
+</div>
+
+<div class="app-container">
+    <header class="app-header">
+        <div class="logo">
+            <i class="fa-solid fa-cloud-bolt"></i>
+            <span>Weatherly</span>
+        </div>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Şehir yazın (Örn: Baku)...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <main class="weather-card">
+        <div class="current-section">
+            <div>
+                <div class="location-badge" id="cityName">
+                    <i class="fa-solid fa-location-dot"></i> Yükleniyor...
+                </div>
+                <h1 class="temperature" id="temp">--°</h1>
+                <p class="condition" id="description">Veriler alınıyor...</p>
+            </div>
+            <div class="weather-icon-box">
+                <i class="fa-solid fa-sun" id="weatherIcon"></i>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon"><i class="fa-solid fa-droplet"></i></div>
+                <div>
+                    <span class="metric-value" id="humidity">--%</span>
+                    <span class="metric-label">Nem</span>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon"><i class="fa-solid fa-wind"></i></div>
+                <div>
+                    <span class="metric-value" id="wind">-- km/s</span>
+                    <span class="metric-label">Rüzgar</span>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon"><i class="fa-solid fa-temperature-half"></i></div>
+                <div>
+                    <span class="metric-value" id="feelsLike">--°</span>
+                    <span class="metric-label">Hissedilen</span>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                <div>
+                    <span class="metric-value" id="pressure">-- hPa</span>
+                    <span class="metric-label">Basınç</span>
+                </div>
+            </div>
+        </div>
+        <div id="statusMsg" class="status-msg">Şehir bulunamadı!</div>
+    </main>
+</div>
+<script src="script.js"></script>
